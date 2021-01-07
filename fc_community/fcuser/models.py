@@ -10,4 +10,7 @@ class Fcuser(models.Model):
                                 verbose_name='비밀번호')
     registered_dttm = models.DateTimeField(auto_now_add=True,
                                            verbose_name='등록시간')
-          
+
+    class Meta:
+        db_table = 'fastcampus_fcuser'  # 테이블명 변경
+        
